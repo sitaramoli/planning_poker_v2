@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+@import "./../Icons/style.scss";
+
+:root {
+  font-family: "Poppins", Arial, sans-serif;
+  font-size: 10px;
+  --red: #db2d2d;
+  --light-gray: #fcfdfe;
+  --main-color: #c57a5c;
+  --dark-gray: #373535b3;
+}
+
+.light {
+  --background-color: #fff;
+  --form-color: #dbdbdb;
+  --text-color: #242424;
+  --form-label: #fcfdfe;
+}
+.dark {
+  --background-color: #242424;
+  --form-color: #3a3a3a;
+  --text-color: #fff;
+  --form-label: #fcfdfe;
+}
+
+#root {
+  background-color: var(--background-color);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import "./App";
+@import "./home";
+@import "./login";
+@import "./button";
+@import "./page-not-found";

@@ -1,0 +1,88 @@
+.toggle {
+  height: 5rem;
+  width: 10rem;
+  border-radius: 5rem;
+  margin: auto;
+  background-image: linear-gradient(aqua, skyblue);
+  position: relative;
+  cursor: pointer;
+
+  &.dark {
+    background-image: linear-gradient(midnightblue, rebeccapurple);
+  }
+}
+
+.notch {
+  height: 4.5rem;
+  width: 4.5rem;
+  border-radius: 50%;
+  background: yellow;
+  position: absolute;
+  top: 0.2rem;
+  left: 0.3rem;
+  box-shadow: 0 0 0.5rem yellow;
+  z-index: 1;
+  transition: all 0.3s ease;
+
+  .dark & {
+    background: whitesmoke;
+    box-shadow: 0 0 0.5rem whitesmoke;
+    transform: translate(5rem, 0);
+  }
+}
+
+.shape {
+  position: absolute;
+  background: whitesmoke;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+
+  &.sm {
+    height: 0.3rem;
+    width: 2.5rem;
+    top: 50%;
+    left: 60%;
+  }
+
+  &.md {
+    height: 0.5rem;
+    width: 4rem;
+    top: 25%;
+    left: 25%;
+    z-index: 2;
+  }
+
+  &.lg {
+    height: 0.8rem;
+    width: 5rem;
+    bottom: 1rem;
+    left: 25%;
+  }
+
+  .dark & {
+    background: lightgray;
+    box-shadow: 0 0 1rem 0.2rem violet;
+
+    &.sm {
+      height: 0.5rem;
+      width: 0.5rem;
+      transform: translate(-2rem, 0);
+
+      &:first-of-type {
+        transform: translate(-5rem, -1rem);
+      }
+    }
+
+    &.md {
+      height: 1rem;
+      width: 1rem;
+      transform: translate(1rem, 0);
+    }
+
+    &.lg {
+      height: 1.5rem;
+      width: 1.5rem;
+      transform: translate(-1rem, 0);
+    }
+  }
+}

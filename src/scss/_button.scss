@@ -1,0 +1,15 @@
+.button {
+  width: 100%;
+  background-color: var(--main-color);
+  border: none;
+  font-family: "Poppins";
+  color: var(--text-color);
+  letter-spacing: 0.02rem;
+  &--auth {
+    padding: 1.5rem 2.4rem;
+    font-weight: 600;
+    line-height: 1.25;
+    font-size: 1.6rem;
+    border-radius: 0.8rem;
+  }
+}
